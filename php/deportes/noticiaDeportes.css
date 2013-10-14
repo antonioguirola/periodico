@@ -1,0 +1,184 @@
+body
+{
+	width: 1024px;
+	height: 1024px;
+	background-color: #E0E0D1;
+	color:black;
+}
+
+a, a:visited
+{
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: none;
+	color:black;
+}
+
+.bannerLateral
+{
+	width: 9.5%;
+	margin: 0px;
+	border: 0px;
+	padding: 2px;
+}
+
+.bannerLateral img
+{
+	width: 100%;
+	margin: 0 auto;
+}
+
+.bannerCent
+{
+	width: 80%;
+	margin: 0 auto;
+	height: 118px;
+	text-align: center;
+}
+
+.bannerCent img
+{
+	width: 100%;
+	height: 100%;	
+	margin: 0 auto;
+}
+
+#bannerIzq
+{
+	float:left;
+}
+
+#bannerDer
+{
+	float: right;
+}
+
+.seccionPrincipal
+{
+	
+	margin: 0 auto;
+	border: 0px;
+	padding: 1px;
+	width: 80%;
+}
+
+.seccionNombrePeriodico
+{
+	width: 99%;
+	height: 7%;
+	margin:0 auto;
+	text-align: center;
+}
+
+.seccionSecciones
+{
+	width: 99%;
+	height: 50px;
+	margin:7px auto;
+	text-align: center;
+}
+
+.seccionSecciones a
+{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: none;
+	font-size: 26px;
+	margin:0px 25px;
+	color:black;
+	padding:3px;
+	border:4px inset #754719;
+	border-radius:5px;	
+}
+
+.seccionSecciones a:hover
+{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-weight: bold;
+	font-style: normal;
+	text-decoration: none;
+	margin:0px 25px;
+	padding:3px;
+	border:4px inset #754719;	
+}
+
+.seccionActual
+{
+	background-color:#754719; 
+}
+
+.seccionNoticiasIzq
+{
+	width: 73%;
+	float: left;
+}
+
+.cuerpoNoticia
+{
+	border: 2px solid #754719;
+	border-radius:7px;
+	padding:1px 3px;
+}
+
+.cuerpoNoticia img
+{
+	margin-left: 4px;
+	margin-top: 1%;
+	width: 98%;
+	border: 1px solid black;
+}
+
+.titulo
+{
+	font-size: 30px;
+	font-family: "Arial Black", Helvetica, sans-serif;
+	color:#40403A;
+	padding: 0;
+	border: 0;
+	margin:0;
+}
+
+.opinionesLectores
+{
+	margin-top: 15px;
+	border-top: 2px dashed #754719;
+	border-bottom: 2px dashed #754719;
+}
+
+.seccionNoticiasDer
+{
+	width: 27%;
+	float: right;
+}
+
+#noticiasRelacionadas
+{
+	height: 300px;
+	background-color: #CACABC;
+}
+
+.anunciosPeq
+{
+	height: 50%;
+	text-align: center;
+	font-size: 10px;
+}
+
+.anunciosPeq img
+{
+
+	width: 90%;
+	height: 150px;
+}
+
+
+footer, footer a
+{
+	clear: both;
+	color:#40403A;
+	font-size: 12px;
+}
+
+
+

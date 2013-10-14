@@ -4,16 +4,18 @@
 
     <head>
 
-        <title>El periódico</title>
+        <title>El periódico - Internacional</title>
         <meta charset="UTF-8"/>
 
         <meta name ="author" content="Antonio Ángel Guirola Vicente"/>
         <meta name="description" content="Periódico para la práctica evaluable 1 de TW"/>
-        <link rel="stylesheet" type="text/css" href="styles/portada.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/seccionInternacional.css"/>
 
     </head>
 
     <body>
+
+        <!-- BANNERS PUBLICITARIOS -->
 
         <section id="bannerIzq" class="bannerLateral">
             <img  src="banners/Banner-Vertical_144x24.jpg"/>
@@ -28,10 +30,14 @@
         </section>
 
 
+        <!-- SECCION PRINCIPAL -->
+
         <section class="seccionPrincipal">
 
+            <!-- NOMBRE Y MENÚ -->
+
             <section class="seccionNombrePeriodico">
-                <a href="./index.php"><img src="img/logo.png"></a>
+                <a href="./"><img src="img/logo.png"></a>
             </section>
 
             <section class="seccionRegistro">
@@ -70,67 +76,56 @@
                     ";
                 }
                 ?>
-                
+
                 <br/>
             </section>
 
             <section class="seccionSecciones">
                 <a href="./nacional.php">Nacional</a>
-                <a href="./internacional.php">Internacional</a>
+                <a class="seccionActual" href="internacional.php">Internacional</a>
                 <a href="./tecnologia.php">Tecnología</a>
                 <a href="./deportes.php">Deportes</a>
             </section>
 
+            <!-- NOTICIA PRINCIPAL DE LA SECCIÓN-->
+
+            <section class="seccionNoticiaPrincipal">
+                <a href="./internacional/estados-unidos-mantiene-politica-20130501.php">
+                    <img src="internacional/estados-unidos-mantiene-politica-20130501/estados-unidos-mantiene-politica-20130501.jpg"/>
+                    <h1>EE UU mantiene la política de estímulo ante el "moderado" crecimiento económico</h1>
+                </a>
+            </section>
+
+            <!-- COLUMNA IZQUIERDA -->
+
             <section class="seccionNoticiasIzq">
 
                 <article class="noticiaIzq">
-                    <a href="./nacional/plan-reformas-millones-20130501.php">
-                        <img src="nacional/plan-reformas-millones-20130501/plan-reformas-millones-20130501.jpg">
-                        <h2>El Plan de Reformas prevé recortar 1.108 millones en dependencia y 700 en Sanidad </h2>
+                    <a href="./internacional/forenses-no-encuentran-posibles-20130501.php">
+                        <img src="internacional/forenses-no-encuentran-posibles-20130501/forenses-no-encuentran-posibles-20130501.jpg">
+                        <h2>Los forenses no encuentran posibles restos humanos cerca de la 'zona cero'</h2>
                     </a>
                 </article>
 
                 <article class="noticiaIzq">
-                    <a href="./nacional/mayo-lluvias-cuatro-provincias-20130501.php">
-                        <img src="nacional/mayo-lluvias-cuatro-provincias-20130501/mayo-lluvias-cuatro-provincias-20130501.jpg">
-                        <h2>Mayo comienza con lluvias y cuatro provincias en alerta a causa de la nieve y las olas </h2>
+                    <a href="./internacional/margallo-responde-maduro-20130501.php">
+                        <img src="internacional/margallo-responde-maduro-20130501/margallo-responde-maduro-20130501.jpg">
+                        <h2>Margallo responde a las críticas de Nicolás Maduro apelando al "respeto recíproco"</h2>
                     </a>
                 </article>
 
                 <article class="noticiaIzq">
-                    <a href="./deportes/bayern-humilla-barsa-20130501.php">
-                        <img src="deportes/bayern-humilla-barsa-20130501/bayern-humilla-barsa-20130501.jpg"/>
-                        <br/>
-                        <h1>El Bayern humilla al Barça</h1>
+                    <a href="./internacional/morales-expulsa-cooperacion-estadounidense-20130501.php">
+                        <img src="internacional/morales-expulsa-cooperacion-estadounidense-20130501/morales-expulsa-cooperacion-estadounidense-20130501.jpg">
+                        <h2>Evo Morales expulsa a la cooperación estadounidense por supuesta intromisión </h2>
                     </a>
                 </article>
 
             </section>
 
+            <!-- COLUMNA DERECHA -->
+
             <section class="seccionNoticiasDer">
-
-                <article id="ultimasNoticiasPortada">
-                    <h4>Últimos titulares </h4>
-                    <?php
-                    require_once './BD/configuracionBD.inc';
-                    require_once './BD/DataObject.class.inc';
-                    require_once './BD/UltimaNoticia.class.inc';
-
-                    $resultados = UltimaNoticia::obtenerUltimasNoticias(0, 100, "id desc");
-                    foreach ($resultados[0] as $fila) {
-                        $id = $fila->datos["id"];
-                        $titulo = $fila->datos["titulo"];
-                        $cuerpo = $fila->datos["cuerpo"];
-                        $fecha = $fila->datos["fecha"];
-                        echo "<strong>$titulo</strong>";
-                        echo "<br/>";
-                        echo $cuerpo . "<br/>";
-                        echo "<em>$fecha</em><br/>";
-                        echo "------------------------------------<br>";
-                    }
-                    ?>
-                    <br/>
-                </article>
 
                 <article class="anunciosPeq">
                     <h2>Publicidad</h2>
@@ -140,30 +135,34 @@
 
             </section>
 
+            <!-- COLUMNA CENTRAL -->
+
             <section class="seccionNoticiasCent">
 
                 <article class="noticiaCent">
-                    <a href="./nacional/protesta-1-mayo-20130501.php">
-                        <img src="nacional/protesta-1-mayo-20130501/protesta-1-mayo-20130501.jpg"/>
-                        <h1>Cientos de miles de españoles toman las calles el 1º de Mayo para protestar por el desempleo</h1>
+                    <a href="./internacional/eeuu-saca-espania-pirateria-20130501.php">
+                        <img src="internacional/eeuu-saca-espania-pirateria-20130501/eeuu-saca-espania-pirateria-20130501.jpg">
+                        <h2>EE UU saca a España de la lista de países permisivos con la piratería por segundo año </h2>
                     </a>
                 </article>
 
                 <article class="noticiaCent">
-                    <a href="./internacional/estados-unidos-mantiene-politica-20130501.php">
-                        <img src="internacional/estados-unidos-mantiene-politica-20130501/estados-unidos-mantiene-politica-20130501.jpg"/>
-                        <h1>EE UU mantiene la política de estímulo ante el "moderado" crecimiento económico</h1>
+                    <a href="./internacional/ninias-afganas-intoxicadas-20130501.php">
+                        <img src="internacional/ninias-afganas-intoxicadas-20130501/ninias-afganas-intoxicadas-20130501.jpg">
+                        <h2>Unas 70 niñas afganas resultan intoxicadas mientras hacían cola en una escuela de Kabul</h2>
                     </a>
                 </article>
 
                 <article class="noticiaCent">
-                    <a href="./deportes/prensa-britanica-vuelta-mourinho-20130501.php">
-                        <img src="deportes/prensa-britanica-vuelta-mourinho-20130501/prensa-britanica-vuelta-mourinho-20130501.jpg">
-                        <h2>La prensa británica da por hecho la vuelta de Mourinho al Chelsea</h2>
+                    <a href="./internacional/papa-dia-trabajo-20130501.php">
+                        <img src="internacional/papa-dia-trabajo-20130501/papa-dia-trabajo-20130501.jpg">
+                        <h2>El papa, en el Día del Trabajo: "Si no todos tienen la posibilidad de trabajar, la sociedad no es justa" </h2>
                     </a>
                 </article>
 
             </section>
+
+            <!-- PIE DE PÁGINA -->
 
             <footer>
                 <br/>
@@ -176,7 +175,6 @@
             </footer>
 
         </section>  <!--fin de la sección principal-->
-
 
     </body>
 

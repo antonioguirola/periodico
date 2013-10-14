@@ -1,0 +1,205 @@
+body
+{
+	width: 1024px;
+	height: 1024px;
+	background-color: #E0E0D1;
+	color:black;
+}
+
+a, a:visited
+{
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: none;
+	color:black;
+}
+
+a:hover
+{
+	text-decoration: underline;
+}
+
+.bannerLateral
+{
+	width: 9.5%;
+	margin: 0px;
+	border: 0px;
+	padding: 2px;
+}
+
+.bannerLateral img
+{
+	width: 100%;
+	margin: 0 auto;
+}
+
+.bannerCent
+{
+	width: 80%;
+	margin: 0 auto;
+	height: 118px;
+	text-align: center;
+}
+
+.bannerCent img
+{
+	width: 100%;
+	height: 100%;	
+	margin: 0 auto;
+}
+
+#bannerIzq
+{
+	float:left;
+}
+
+#bannerDer
+{
+	float: right;
+}
+
+.seccionPrincipal
+{
+	
+	margin: 0 auto;
+	border: 0px;
+	padding: 0px;
+	width: 80%;
+}
+
+.seccionNombrePeriodico
+{
+	width: 99%;
+	height: 7%;
+	margin:0 auto;
+	text-align: center;
+}
+
+.seccionSecciones
+{
+	width: 99%;
+	height: 50px;
+	margin:7px auto;
+	text-align: center;
+}
+
+.seccionSecciones a
+{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: none;
+	font-size: 26px;
+	margin:0px 25px;
+	color:black;
+	padding:3px;
+	border:4px inset #754719;
+	border-radius:5px;	
+}
+
+.seccionSecciones a:hover
+{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-weight: bold;
+	font-style: normal;
+	text-decoration: none;
+	margin:0px 25px;
+	padding:3px;
+	border:4px inset #754719;	
+}
+
+.seccionActual
+{
+	background-color:#754719; 
+}
+
+
+.seccionNoticiaPrincipal
+{
+	width: 99%;
+	height: 300px;
+	margin:0 auto;
+	text-align: center;
+	border-radius:7px;
+	background-color: #CACABC;
+	font-size: 30px;
+}
+
+.seccionNoticiaPrincipal img
+{
+	margin-top: 1%;
+	margin-left: 1%;
+	float:left;
+	width:350px;
+	height:280px;
+	border-right:2px solid #754719;
+	padding-right: 5px;
+}
+
+.seccionNoticiasIzq
+{
+	width: 40%;
+	float: left;
+}
+
+.noticiaIzq
+{
+	border: 2px solid #754719;
+	border-radius:7px;
+	margin:3px 0px;
+	padding:3px;
+}
+
+.noticiaIzq:hover, .seccionNoticiaPrincipal:hover
+{
+	background-color: #754719;
+	text-decoration: underline;
+}
+
+.noticiaIzq img, .noticiaCent img
+{
+	width: 97%;
+	border: 1px solid black;
+	margin-left: 4px;
+	margin-top: 4px;
+}
+
+.seccionNoticiasDer
+{
+	width: 30%;
+	float: right;
+}
+
+
+.anunciosPeq
+{
+	height: 50%;
+	text-align: center;
+	font-size: 10px;
+}
+
+.anunciosPeq img
+{
+
+	width: 90%;
+	height: 150px;
+}
+
+.seccionNoticiasCent
+{
+	float: left;
+	width: 30%;
+}
+
+.noticiaCent
+{
+	margin-left: 4px;
+}
+
+footer, footer a
+{
+	clear: both;
+	color:#40403A;
+	font-size: 12px;
+}
+
