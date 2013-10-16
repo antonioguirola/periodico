@@ -1,14 +1,14 @@
 <?php
 
-OPENSHIFT_MYSQL_DB_PORT=3306
-OPENSHIFT_MYSQL_DB_HOST=127.12.132.2
-OPENSHIFT_MYSQL_DB_PASSWORD=HJfPeaHHVcL8
-OPENSHIFT_MYSQL_DB_USERNAME=adminWjH8lMV
-OPENSHIFT_MYSQL_DB_URL=mysql://adminWjH8lMV:HJfPeaHHVcL8@127.12.132.2:3306/
+$db_host = $_ENV['OPENSHIFT_DB_HOST'];
+$db_user = $_ENV['OPENSHIFT_DB_USERNAME'];
+$db_pass = $_ENV['OPENSHIFT_DB_PASSWORD'];
+$db_name = $_ENV['OPENSHIFT_APP_NAME'];
+$db_port = $_ENV['OPENSHIFT_DB_PORT'];
 
-define("DB_DSN", "mysql://$OPENSHIFT_MYSQL_DB_HOST:$OPENSHIFT_MYSQL_DB_PORT/;dbname=appdeprueba");
-define("DB_USUARIO", "$OPENSHIFT_MYSQL_DB_USERNAME");
-define("DB_CONTRASENIA", "$OPENSHIFT_MYSQL_DB_PASSWORD");
+define("DB_DSN", "mysql://$db_host:$db_port/;dbname=$db_name");
+define("DB_USUARIO", "$db_user");
+define("DB_CONTRASENIA", "$db_pass");
 define("TAMANIO_PAGINA", 5);
 define("TABLA_USUARIOS", "usuario");
 define("TABLA_NOTICIAS", "noticia");
