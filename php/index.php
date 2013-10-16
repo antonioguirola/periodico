@@ -36,6 +36,10 @@
 
             <section class="seccionRegistro">
                 <?php
+
+                ini_set('display_errors', true);
+                error_reporting(E_ALL);
+
                 session_start();
                 //var_dump($_SESSION);
                 if (count($_SESSION) == 0) {
