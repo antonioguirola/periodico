@@ -1,5 +1,8 @@
 <?php
 
+error_reporting(E_ALL);
+ini_set('display_errors', '1');
+
 $db_host = $_ENV['OPENSHIFT_DB_HOST'];
 $db_user = $_ENV['OPENSHIFT_DB_USERNAME'];
 $db_pass = $_ENV['OPENSHIFT_DB_PASSWORD'];
