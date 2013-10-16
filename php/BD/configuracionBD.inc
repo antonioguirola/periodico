@@ -27,8 +27,8 @@ define("TABLA_COMENTARIOS", "comentario");
     define('DB_PORT',getenv('OPENSHIFT_MYSQL_DB_PORT')); 
 
     define('DB_DSN' , 'mysql:dbname='.DB_BASE.';host='.DB_HOST.';port='.DB_PORT.'');
-    define("DB_USUARIO", db_user);
-	define("DB_CONTRASENIA", db_pass);
+    define("DB_USUARIO", DB_USER);
+	define("DB_CONTRASENIA", DB_PASS);
 	define("TAMANIO_PAGINA", 5);
 	define("TABLA_USUARIOS", "usuario");
 	define("TABLA_NOTICIAS", "noticia");
