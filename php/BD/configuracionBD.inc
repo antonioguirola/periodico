@@ -26,7 +26,7 @@ define("TABLA_COMENTARIOS", "comentario");
     define('DB_BASE','gitspot');
     define('DB_PORT',getenv('OPENSHIFT_MYSQL_DB_PORT')); 
 
-    $DB_DSN = 'mysql:dbname='.DB_BASE.';host='.DB_HOST.';port='.DB_PORT;
+    define('DB_DSN' , 'mysql:dbname='.DB_BASE.';host='.DB_HOST.';port='.DB_PORT.'');
     define("DB_USUARIO", db_user);
 	define("DB_CONTRASENIA", db_pass);
 	define("TAMANIO_PAGINA", 5);
