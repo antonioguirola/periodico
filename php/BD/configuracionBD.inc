@@ -1,5 +1,6 @@
 <?php
 
+/*
 $db_host = $_ENV['OPENSHIFT_DB_HOST'];
 $db_user = $_ENV['OPENSHIFT_DB_USERNAME'];
 $db_pass = $_ENV['OPENSHIFT_DB_PASSWORD'];
@@ -17,5 +18,19 @@ define("TAMANIO_PAGINA", 5);
 define("TABLA_USUARIOS", "usuario");
 define("TABLA_NOTICIAS", "noticia");
 define("TABLA_COMENTARIOS", "comentario");
+*/
 
+	define('DB_HOST', getenv('OPENSHIFT_MYSQL_DB_HOST'));
+    define('DB_USER',getenv('OPENSHIFT_MYSQL_DB_USERNAME'));
+    define('DB_PASS',getenv('OPENSHIFT_MYSQL_DB_PASSWORD'));
+    define('DB_BASE','gitspot');
+    define('DB_PORT',getenv('OPENSHIFT_MYSQL_DB_PORT')); 
+
+    $DB_DSN = 'mysql:dbname='.DB_BASE.';host='.DB_HOST.';port='.DB_PORT;
+    define("DB_USUARIO", db_user);
+	define("DB_CONTRASENIA", db_pass);
+	define("TAMANIO_PAGINA", 5);
+	define("TABLA_USUARIOS", "usuario");
+	define("TABLA_NOTICIAS", "noticia");
+	define("TABLA_COMENTARIOS", "comentario");
 ?>
